@@ -4,7 +4,6 @@ f1env/
 # Byte-compiled / cache files
 __pycache__/
 *.py[cod]
-*.pyo
 
 # VS Code settings
 .vscode/
