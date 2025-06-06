@@ -1,0 +1,34 @@
+# Virtual environment
+f1env/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# SQLite DB
+*.sqlite
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+
+# Python-specific
+*.egg-info/
+*.egg
+*.pyd
+*.pdb
+*.so
+
+# Jupyter Notebook checkpoints (if ever used)
+.ipynb_checkpoints/
+
+# Compiled C files (if using any extensions)
+*.c
+*.o
+*.out
