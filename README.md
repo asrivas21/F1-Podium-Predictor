@@ -1,50 +1,92 @@
-F1 Podium Predictor
+# F1 Podium Predictor
 
-A machine learning-powered application that predicts Formula 1 podium finishers and compares predictions against actual race results through an interactive visualization.
+## Overview
 
-Overview
+### Product Summary
 
-Formula 1 is a data-rich sport where performance is influenced by driver skill, team strength, track characteristics, and race conditions. This project leverages historical race data and machine learning models to:
+A machine learning-driven application that predicts Formula 1 podium finishes for a given season and compares those predictions against actual results through an interactive visualization interface.
 
-Predict how many podiums each driver will achieve in a given season
-Compare predicted vs actual results
-Visualize performance differences interactively
-Features
-Machine Learning Models
-KNN, Random Forest, and other regressors
-Model evaluation and comparison
-Feature Engineering
-Driver performance metrics
-Historical podium trends
-Team-based performance signals
-Prediction Engine
-Predicts podium counts per driver for a selected season
-Interactive Visualization
-Compare predicted vs actual podiums
-Clean, intuitive UI for exploration
-Data Integration
-Uses real F1 data via API or datasets
-Preprocessed and cleaned for modeling
-Tech Stack
+The system combines data processing, feature engineering, model training, and front-end visualization into a single pipeline designed for both analysis and demonstration.
+
+### Goal
+
+Build an end-to-end data science and visualization project that demonstrates:
+
+machine learning applied to real-world sports data
+feature engineering and model comparison
+interactive data visualization
+full-stack integration of ML and frontend systems
+
+## Objectives & Success Metrics
+
+### Primary Objectives
+
+Train models to predict podium counts per driver
+Compare multiple machine learning approaches
+Provide an intuitive visualization for predictions vs actual results
+Maintain a clean and interpretable data pipeline
+
+### Success Metrics
+
+Strong predictive performance relative to baseline
+Clear separation between model outputs
+Visually intuitive comparison interface
+Consistent results across multiple seasons
+
+## Target Users
+
+### Primary User
+
+Recruiters and interviewers evaluating technical projects
+
+### Secondary Use Cases
+
+Formula 1 fans interested in analytics
+Students learning machine learning and data visualization
+
+## Key Features
+
+### Data Processing
+
+Load and clean historical F1 race data
+Handle missing values and inconsistencies
+Normalize and structure data for modeling
+
+### Feature Engineering
+
+Driver performance trends
+Team performance indicators
+Historical podium frequency
+Season-based aggregations
+
+### Model Training
+
+Train multiple regression models including:
+K-Nearest Neighbors
+Random Forest
+Compare performance across models
+Evaluate using appropriate metrics
+
+### Prediction Engine
+
+Generate predicted podium counts for each driver
+Support predictions for specific seasons
+Output structured results for visualization
+
+### Interactive Visualization
+
+Display predicted vs actual podium counts
+Enable comparison across drivers
+Provide filtering or selection by season
+
+## Tech Stack
+
 Frontend: JavaScript, D3.js
-Backend and Data Processing: Python, Pandas
+Backend/Data Processing: Python, Pandas
 Machine Learning: Scikit-learn
-Data Source: F1 datasets or APIs
-Visualization: D3
-Project Structure
 
-F1-Podium-Predictor/
-data/ Raw and cleaned datasets
-models/ Trained ML models
-notebooks/ Experimentation and exploratory analysis
-src/ Core logic for training and prediction
-public/ Frontend assets
-index.html Main UI
-app.js Visualization and interaction logic
-requirements.txt Python dependencies
-README.md
+## How It Works
 
-How It Works
 Data Collection
 Historical race data is gathered and cleaned
 Feature Engineering
@@ -55,24 +97,31 @@ Prediction
 Generate predicted podium counts for each driver
 Visualization
 Display predictions versus actual results in an interactive interface
-Installation and Setup
+
+## Installation and Setup
+
 Clone the repository and navigate into the project directory
 Install dependencies using the requirements file
 Run the training pipeline from the source directory
 Open the frontend locally or serve it using a simple local server
-Example Output
+
+## Example Output
+
 Predicted podium counts per driver
 Actual podium counts
 Side-by-side comparison chart
 Interactive filtering by year
-Model Performance
+
+## Model Performance
+
 KNN: Moderate accuracy
 Random Forest: Best overall performance
 Additional models evaluated using cross-validation
 
 Exact metrics depend on dataset and tuning
 
-Future Improvements
+## Future Improvements
+
 Add real-time race predictions
 Incorporate weather and qualifying data
 Improve model accuracy with more advanced models
